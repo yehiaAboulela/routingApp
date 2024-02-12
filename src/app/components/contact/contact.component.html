@@ -1,0 +1,59 @@
+<section>
+  <div class="container text-dark">
+    <div class="text-center mt-3">
+      <h1 class="fw-bold">CONATCT SECTION</h1>
+      <app-star-splitter-dark />
+    </div>
+    <form action="" class="w-50 mx-auto my-5">
+      <div class="mb-5 input-parent">
+        <label for="userName" [ngClass]="{ active: userName }">userName</label>
+        <input
+          id="userName"
+          type="text"
+          class="form-control border-0 border-bottom py-3"
+          placeholder="userName"
+          name="userName"
+          [(ngModel)]="userName"
+        />
+      </div>
+      <div class="mb-5 input-parent">
+        <label for="userAge" [ngClass]="{ active: userAge }">userAge</label>
+        <input
+          id="userAge"
+          type="text"
+          class="form-control border-0 border-bottom py-3"
+          placeholder="userAge"
+          name="userAge"
+          [(ngModel)]="userAge"
+        />
+      </div>
+      <div class="mb-5 input-parent">
+        <label for="userEmail" [ngClass]="{ active: userEmail }"
+          >userEmail</label
+        >
+        <input
+          id="userEmail"
+          type="email"
+          class="form-control border-0 border-bottom py-3"
+          placeholder="userEmail"
+          name="userEmail"
+          [(ngModel)]="userEmail"
+        />
+      </div>
+      <div class="mb-5 input-parent">
+        <label for="userPassword" [ngClass]="{ active: userPassword }"
+          >userPassword</label
+        >
+        <input
+          type="password"
+          class="form-control border-0 border-bottom py-3"
+          placeholder="userPassword"
+          name="userPassword"
+          [(ngModel)]="userPassword"
+        />
+      </div>
+
+      <button class="btn btn-secondary">send Message</button>
+    </form>
+  </div>
+</section>

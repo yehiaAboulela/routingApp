@@ -1,0 +1,15 @@
+.star-icon {
+  margin-block: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-icon i {
+  padding-inline: 10px;
+}
+.star-icon .left,
+.star-icon .right {
+  width: 70px;
+  height: 3px;
+  background-color: var(--colo-dark);
+}

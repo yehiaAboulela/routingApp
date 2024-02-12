@@ -1,0 +1,18 @@
+.my-footer-parent {
+  background-color: #2c3e50;
+}
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.copy-rights {
+  background-color: var(--colo-dark);
+  padding: 20px 0;
+  color: white;
+}

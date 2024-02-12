@@ -1,0 +1,20 @@
+.input-parent {
+  position: relative;
+}
+
+input:focus {
+  box-shadow: none;
+}
+label {
+  color: var(--color-secondary);
+  position: absolute;
+  left: 5px;
+  top: -20px;
+  z-index: -1;
+  transform: translateY(25px);
+  transition: transform 0.4s;
+}
+label.active {
+  z-index: 1;
+  transform: translateY(0);
+}

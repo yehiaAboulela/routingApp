@@ -1,0 +1,7 @@
+.my-nav {
+  background-color: var(--color-main);
+}
+.active-nav {
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+}

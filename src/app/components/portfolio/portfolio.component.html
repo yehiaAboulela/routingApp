@@ -1,0 +1,61 @@
+<div class="portfolio text-center text-black">
+  <h1 class="mt-5">PORTFOLIO COMPONENT</h1>
+  <app-star-splitter-dark />
+  <div class="container">
+    <div class="row mb-3 g-5">
+      <div class="col-md-4">
+        <div class="overflow-hidden rounded-3 card-parent">
+          <div class="layer" (click)="getSrc('./../assets/imgs/poert1.png')">
+            <i class="fa fa-plus"></i>
+          </div>
+          <img src="./../assets/imgs/poert1.png" alt="house" class="w-100" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="overflow-hidden rounded-3 card-parent">
+          <div class="layer" (click)="getSrc('./../assets/imgs/port2.png')">
+            <i class="fa fa-plus"></i>
+          </div>
+          <img src="./../assets/imgs/port2.png" alt="house" class="w-100" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="overflow-hidden rounded-3 card-parent">
+          <div class="layer" (click)="getSrc('./../assets/imgs/port3.png')">
+            <i class="fa fa-plus"></i>
+          </div>
+          <img src="./../assets/imgs/port3.png" alt="house" class="w-100" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="overflow-hidden rounded-3 card-parent">
+          <div class="layer" (click)="getSrc('./../assets/imgs/poert1.png')">
+            <i class="fa fa-plus"></i>
+          </div>
+          <img src="./../assets/imgs/poert1.png" alt="house" class="w-100" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="overflow-hidden rounded-3 card-parent">
+          <div class="layer" (click)="getSrc('./../assets/imgs/port2.png')">
+            <i class="fa fa-plus"></i>
+          </div>
+          <img src="./../assets/imgs/port2.png" alt="house" class="w-100" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="overflow-hidden rounded-3 card-parent">
+          <div class="layer" (click)="getSrc('./../assets/imgs/port3.png')">
+            <i class="fa fa-plus"></i>
+          </div>
+          <img src="./../assets/imgs/port3.png" alt="house" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-portfolio-layer
+  [srcFromParent]="imgSrc"
+  [class]="imgSrc ? 'd-flex' : 'd-none'"
+  (click)="removeSrc()"
+/>
